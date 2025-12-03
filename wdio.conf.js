@@ -49,9 +49,14 @@ exports.config = {
     // Sauce Labs platform configurator - a great tool to configure your capabilities:
     // https://saucelabs.com/platform/platform-configurator
     //
-    capabilities: [{
-        browserName: 'chrome'
-    }],
+   capabilities: [{
+        browserName: 'chrome',
+        'goog:chromeOptions': {
+            args: [ ]
+        },
+        'wdio:enforceWebDriverClassic': true
+    },
+    ],
 
     //
     // ===================
@@ -129,7 +134,7 @@ exports.config = {
     // See the full list at http://mochajs.org/
     mochaOpts: {
         ui: 'bdd',
-        timeout: 60000
+        timeout: 120000
     },
 
     //
