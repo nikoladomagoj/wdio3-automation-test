@@ -39,6 +39,7 @@ The automated test performs the following steps:
 To avoid duplicate user errors, the following random data is generated for every test run:
 
 * ✅ **Random email**
+* ✅ **Random first and last name**
 * ✅ **Random mobile number**
 
 Random data is generated inside:
@@ -122,6 +123,7 @@ This keeps the test:
 ## 📌 Notes
 
 * Random email prevents duplicate signup errors
+* Random first name and last name prevents validation issues
 * Random mobile number prevents validation issues
 * Country selection is handled using:
 

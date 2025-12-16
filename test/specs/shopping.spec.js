@@ -1,5 +1,5 @@
 const shoppingPage = require("../pageobjects/shopping.page");
-const { randomEmail, randomMobile } = require('../utility/random');
+const { randomEmail, randomMobile, randomFirstName, randomLastName } = require('../utility/random');
 const loginURL = 'https://automationexercise.com/';  
 
 describe('Shopping', ()=> {
@@ -18,8 +18,8 @@ describe('Shopping', ()=> {
 
         signupname = 'mike';
         password = 'test';
-        firstname = 'mike';
-        lastname = 'jordan';
+        firstname = randomFirstName();
+        lastname = randomLastName();
         address = 'humphrey3';
         state = 'illinois';
         city = 'chicago';
