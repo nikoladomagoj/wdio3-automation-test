@@ -19,8 +19,8 @@ The automated test performs the following steps:
 6. Fill in account details:
 
    * Password
-   * First name
-   * Last name
+   * Random first name
+   * Random last name
    * Address
    * Country (from dropdown)
    * State
